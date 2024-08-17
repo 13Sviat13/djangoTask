@@ -1,0 +1,23 @@
+{% extends 'homepage.html' %}
+
+{% block content %}
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <h1>Create Restaurant</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">name:</label>
+        <input type="name" id="name" name="name"><br><br>
+        <label for="adress">adress:</label>
+        <input type="adress" id="adress" name="password"><br><br>
+        <label for="kitchen">kitchen:</label>
+        <input type="kitchen" id="kitchen" name="kitchen"><br><br>
+        <label for="phone_number">phone-number:</label>
+        <input type="phone_number" id="phone_number" name="phone_number"><br><br>
+        <button type="submit">Create_restaurant</button>
+    </form>
+</body>
+</html>
+{% endblock %}
